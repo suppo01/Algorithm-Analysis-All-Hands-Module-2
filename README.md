@@ -2,10 +2,20 @@
 
 Command used to run: `python3 main.py`
 
+The test cases were then listed in two groups:
+
+Sorted by Duration: Tests are ordered from the shortest to the longest execution time.
+Sorted by Coverage: Tests are ordered by the coverage percentage, with a breakdown of each test case's duration and coverage.
+
 ```shell
-rosaruiz@Rosas-Laptop Rosa % python3 main.py
-Sorting by duration took 0.0004291534423828125 seconds.
-Sorting by coverage took 0.0005748271942138672 seconds.
+Sorting by duration took 0.0005459785461425781 seconds.
+Sorting by coverage took 0.0004239082336425781 seconds.
+Fastest Test Case (Base on duration):
+Test Name: tests/test_debug.py::test_debug_destination_iteration
+Duration: 0.00015145799989113584
+Coverage: 100
+
+Sorted Test Cases by Coverage:
 +-----------------------------------------------------------------------------------------------+--------------+------------+
 | Test Name                                                                                     |     Duration |   Coverage |
 +===============================================================================================+==============+============+
@@ -193,5 +203,5 @@ Sorting by coverage took 0.0005748271942138672 seconds.
 +-----------------------------------------------------------------------------------------------+--------------+------------+
 | tests/test_constants.py::test_filesystem_constants                                            |  0.000177292 |        100 |
 +-----------------------------------------------------------------------------------------------+--------------+------------+
-rosaruiz@Rosas-Laptop Rosa %
+rosaruiz@Rosas-Laptop Rosa % 
 ```
