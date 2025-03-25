@@ -2,9 +2,11 @@ import numpy as np
 from pymoo.algorithms.soo.nonconvex.ga import GA
 from pymoo.operators.selection.tournament import TournamentSelection
 from pymoo.optimize import minimize
-from pymoo.problems import get_problem
+from pymoo.algorithms.moo.nsga2 import binary_tournament
+from data import simplified_test_metrics
 
 # P is the permutations of things to be compared between competitors
+"""
 def binary_tournament(pop, P, _, **kwargs):
     # The P input defines the tournaments and competitors
     n_tournaments, n_competitors = P.shape
@@ -28,3 +30,10 @@ def binary_tournament(pop, P, _, **kwargs):
             S[i] = b
 
     return S
+"""
+
+selection = TournamentSelection(pressure=2, func_comp=binary_tournament)
+problem = np.array(dict[simplified_test_metrics])
+algorithm = GA(pop_size=len(problem), eliminate_duplicates=True)
+res = minimize(problem, algorithm, termination=('n_gen', (2.5 * pow(10, 164))), verbose=False)
+print(res)
