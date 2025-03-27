@@ -1,0 +1,554 @@
+[
+  {
+    "name": "tests/test_checks.py::test_extract_min_max",
+    "duration": 0.00022429099772125483,
+    "outcome": "passed",
+    "coverage": 4.485819954425097e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_extract_max",
+    "duration": 0.00016916700042202137,
+    "outcome": "passed",
+    "coverage": 3.3833400084404276e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_extract_min",
+    "duration": 0.00021412499700090848,
+    "outcome": "passed",
+    "coverage": 4.28249994001817e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_extract_min_max_missing",
+    "duration": 0.00017154199667857029,
+    "outcome": "passed",
+    "coverage": 3.4308399335714056e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_extract_description",
+    "duration": 0.000243875001615379,
+    "outcome": "passed",
+    "coverage": 4.87750003230758e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_extract_desription_none",
+    "duration": 0.0001687500007392373,
+    "outcome": "passed",
+    "coverage": 3.3750000147847457e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_make_checks_status_message[True-:smiley: Did the check pass? Yes]",
+    "duration": 0.00016341700029443018,
+    "outcome": "passed",
+    "coverage": 3.2683400058886035e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_make_checks_status_message[False-:worried: Did the check pass? No]",
+    "duration": 0.00015666699982830323,
+    "outcome": "passed",
+    "coverage": 3.1333399965660645e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_extract_min_max_hypothesis",
+    "duration": 0.7849324169983447,
+    "outcome": "passed",
+    "coverage": 0.015698648339966894
+  },
+  {
+    "name": "tests/test_checks.py::test_integers",
+    "duration": 12.309599500000331,
+    "outcome": "passed",
+    "coverage": 0.24619199000000663
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count_expected[5-0-10-True]",
+    "duration": 0.00018679200002225116,
+    "outcome": "passed",
+    "coverage": 3.735840000445023e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count_expected[5-4-6-True]",
+    "duration": 0.00016200000027311035,
+    "outcome": "passed",
+    "coverage": 3.240000005462207e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count_expected[1-1-1-True]",
+    "duration": 0.0001973329999600537,
+    "outcome": "passed",
+    "coverage": 3.946659999201074e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count_expected[1-None-1-True]",
+    "duration": 0.00017624999964027666,
+    "outcome": "passed",
+    "coverage": 3.524999992805533e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count_expected[1-1-None-True]",
+    "duration": 0.00017095799921662547,
+    "outcome": "passed",
+    "coverage": 3.4191599843325095e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count_expected[1-None-None-True]",
+    "duration": 0.00020324999786680564,
+    "outcome": "passed",
+    "coverage": 4.064999957336113e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count_expected[5-6-4-False]",
+    "duration": 0.0001768750007613562,
+    "outcome": "passed",
+    "coverage": 3.537500015227124e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count_expected[1-4-6-False]",
+    "duration": 0.00016445800065412186,
+    "outcome": "passed",
+    "coverage": 3.2891600130824374e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count_expected[1-2-None-False]",
+    "duration": 0.00015945799896144308,
+    "outcome": "passed",
+    "coverage": 3.1891599792288616e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count_expected[3-None-2-False]",
+    "duration": 0.00018195799930253997,
+    "outcome": "passed",
+    "coverage": 3.6391599860507997e-06
+  },
+  {
+    "name": "tests/test_checks.py::test_check_match_count",
+    "duration": 0.14441454100233386,
+    "outcome": "passed",
+    "coverage": 0.0028882908200466772
+  },
+  {
+    "name": "tests/test_configApp.py::test_write_checks",
+    "duration": 0.00019266599701950327,
+    "outcome": "passed",
+    "coverage": 4.480604581848913e-06
+  },
+  {
+    "name": "tests/test_configApp.py::test_write_checks_empty_file",
+    "duration": 0.00016491700080223382,
+    "outcome": "passed",
+    "coverage": 3.835279088424042e-06
+  },
+  {
+    "name": "tests/test_configApp.py::test_split_file",
+    "duration": 0.0005234170021140017,
+    "outcome": "passed",
+    "coverage": 1.2172488421255852e-05
+  },
+  {
+    "name": "tests/test_configApp.py::test_store_in_file",
+    "duration": 0.15428383399921586,
+    "outcome": "passed",
+    "coverage": 0.0035879961395166478
+  },
+  {
+    "name": "tests/test_configuration.py::test_fuzz_create_use_config_dir",
+    "duration": 0.15880262499922537,
+    "outcome": "passed",
+    "coverage": 0.0012910782520262226
+  },
+  {
+    "name": "tests/test_configuration.py::test_fuzz_configure_logging",
+    "duration": 0.01015075000032084,
+    "outcome": "passed",
+    "coverage": 8.252642276683611e-05
+  },
+  {
+    "name": "tests/test_configuration.py::test_fuzz_configure_logging_incorrect_inputs",
+    "duration": 0.00975191700126743,
+    "outcome": "passed",
+    "coverage": 7.92838780590848e-05
+  },
+  {
+    "name": "tests/test_constants.py::test_filesystem_constants",
+    "duration": 0.00017729200044414029,
+    "outcome": "passed",
+    "coverage": 1.4297741971301635e-06
+  },
+  {
+    "name": "tests/test_constants.py::test_fuzz_init",
+    "duration": 0.33516041599796154,
+    "outcome": "passed",
+    "coverage": 0.002702906580628722
+  },
+  {
+    "name": "tests/test_constants.py::test_fuzz_immutable",
+    "duration": 0.6425222500001837,
+    "outcome": "passed",
+    "coverage": 0.005181631048388579
+  },
+  {
+    "name": "tests/test_constants.py::test_fuzz_distinct",
+    "duration": 0.22511158300039824,
+    "outcome": "passed",
+    "coverage": 0.0018154159919386956
+  },
+  {
+    "name": "tests/test_constants.py::test_fuzz_dataclass_equality",
+    "duration": 0.2639441249993979,
+    "outcome": "passed",
+    "coverage": 0.002128581653220951
+  },
+  {
+    "name": "tests/test_createchecks.py::test_valid_api_key",
+    "duration": 0.0002593749995867256,
+    "outcome": "skipped",
+    "coverage": 0
+  },
+  {
+    "name": "tests/test_createchecks.py::test_invalid_api_key",
+    "duration": 0.00018995799837284721,
+    "outcome": "failed",
+    "coverage": 0
+  },
+  {
+    "name": "tests/test_createchecks.py::test_generate_yaml_config",
+    "duration": 0.000378167002054397,
+    "outcome": "skipped",
+    "coverage": 0
+  },
+  {
+    "name": "tests/test_database.py::test_create_chasten_view",
+    "duration": 0.0029668329989362974,
+    "outcome": "passed",
+    "coverage": 0.00019778886659575315
+  },
+  {
+    "name": "tests/test_debug.py::test_debug_level_values",
+    "duration": 0.00017550000120536424,
+    "outcome": "passed",
+    "coverage": 1.7550000120536424e-05
+  },
+  {
+    "name": "tests/test_debug.py::test_debug_level_isinstance",
+    "duration": 0.0001688330012257211,
+    "outcome": "passed",
+    "coverage": 1.688330012257211e-05
+  },
+  {
+    "name": "tests/test_debug.py::test_debug_level_iteration",
+    "duration": 0.0001571669999975711,
+    "outcome": "passed",
+    "coverage": 1.571669999975711e-05
+  },
+  {
+    "name": "tests/test_debug.py::test_debug_destination_values",
+    "duration": 0.00015350000103353523,
+    "outcome": "passed",
+    "coverage": 1.5350000103353524e-05
+  },
+  {
+    "name": "tests/test_debug.py::test_debug_destination_isinstance",
+    "duration": 0.00015308300135075115,
+    "outcome": "passed",
+    "coverage": 1.5308300135075115e-05
+  },
+  {
+    "name": "tests/test_debug.py::test_debug_destination_iteration",
+    "duration": 0.00015145799989113584,
+    "outcome": "passed",
+    "coverage": 1.5145799989113583e-05
+  },
+  {
+    "name": "tests/test_debug.py::test_level_destination_invalid",
+    "duration": 0.00018045800243271515,
+    "outcome": "passed",
+    "coverage": 1.8045800243271514e-05
+  },
+  {
+    "name": "tests/test_debug.py::test_debug_destination_invalid",
+    "duration": 0.0001664160008658655,
+    "outcome": "passed",
+    "coverage": 1.664160008658655e-05
+  },
+  {
+    "name": "tests/test_filesystem.py::test_valid_directory",
+    "duration": 0.00017979200129047967,
+    "outcome": "passed",
+    "coverage": 2.947409857220978e-06
+  },
+  {
+    "name": "tests/test_filesystem.py::test_invalid_directory",
+    "duration": 0.00021241699869278818,
+    "outcome": "passed",
+    "coverage": 3.4822458802096422e-06
+  },
+  {
+    "name": "tests/test_filesystem.py::test_valid_file",
+    "duration": 0.00019600000086938962,
+    "outcome": "passed",
+    "coverage": 3.2131147683506496e-06
+  },
+  {
+    "name": "tests/test_filesystem.py::test_invalid_file",
+    "duration": 0.00019741700089070946,
+    "outcome": "passed",
+    "coverage": 3.2363442768968765e-06
+  },
+  {
+    "name": "tests/test_filesystem.py::test_fuzz_confirm_valid_directory_using_builds",
+    "duration": 0.0030746669981454033,
+    "outcome": "passed",
+    "coverage": 5.0404377018777106e-05
+  },
+  {
+    "name": "tests/test_filesystem.py::test_fuzz_confirm_valid_file_using_builds",
+    "duration": 0.002073500003461959,
+    "outcome": "passed",
+    "coverage": 3.399180333544195e-05
+  },
+  {
+    "name": "tests/test_filesystem.py::test_create_directory_tree",
+    "duration": 0.0007395419997919817,
+    "outcome": "passed",
+    "coverage": 1.2123639340852159e-05
+  },
+  {
+    "name": "tests/test_filesystem.py::test_fuzz_create_directory_tree",
+    "duration": 0.0075880830008827616,
+    "outcome": "passed",
+    "coverage": 0.00012439480329316002
+  },
+  {
+    "name": "tests/test_filesystem.py::test_create_config_dir_does_not_exist",
+    "duration": 0.0012809170002583414,
+    "outcome": "passed",
+    "coverage": 2.09986393484974e-05
+  },
+  {
+    "name": "tests/test_filesystem.py::test_create_config_dir_already_exist_throw_exception",
+    "duration": 0.000599749997491017,
+    "outcome": "passed",
+    "coverage": 9.831967171983885e-06
+  },
+  {
+    "name": "tests/test_filesystem.py::test_create_config_dir_already_exist_no_exception_when_no_force",
+    "duration": 0.0005690420002792962,
+    "outcome": "passed",
+    "coverage": 9.328557381627806e-06
+  },
+  {
+    "name": "tests/test_filesystem.py::test_create_config_dir_already_exist_no_exception_when_force",
+    "duration": 0.0008465840001008473,
+    "outcome": "passed",
+    "coverage": 1.3878426231161431e-05
+  },
+  {
+    "name": "tests/test_filesystem.py::test_detect_configuration_with_input_config_directory",
+    "duration": 0.00027837500238092616,
+    "outcome": "passed",
+    "coverage": 4.563524629195511e-06
+  },
+  {
+    "name": "tests/test_filesystem.py::test_detect_configuration_with_input_config_directory_use_default",
+    "duration": 0.0007560410012956709,
+    "outcome": "passed",
+    "coverage": 1.2394114775338866e-05
+  },
+  {
+    "name": "tests/test_filesystem.py::test_create_main_configuration_file",
+    "duration": 0.0008971249990281649,
+    "outcome": "passed",
+    "coverage": 1.470696719718303e-05
+  },
+  {
+    "name": "tests/test_filesystem.py::test_create_checks_configuration_file",
+    "duration": 0.0007934580025903415,
+    "outcome": "passed",
+    "coverage": 1.3007508239185927e-05
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_correct_arguments_nothing_to_analyze_not_looking",
+    "duration": 0.15093808299934608,
+    "outcome": "passed",
+    "coverage": 0.0009317165617243585
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_correct_arguments_analyze_chasten_codebase",
+    "duration": 0.06092875000103959,
+    "outcome": "passed",
+    "coverage": 0.0003761033950681456
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_incorrect_arguments_no_project",
+    "duration": 0.009275625001464505,
+    "outcome": "passed",
+    "coverage": 5.72569444534846e-05
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_incorrect_arguments_wrong_config",
+    "duration": 0.008476209000946255,
+    "outcome": "passed",
+    "coverage": 5.232227778361886e-05
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_incorrect_arguments_wrong_source_directory",
+    "duration": 0.006595292001293274,
+    "outcome": "passed",
+    "coverage": 4.071167902032885e-05
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_incorrect_arguments_correct_config",
+    "duration": 0.009309124998253537,
+    "outcome": "passed",
+    "coverage": 5.74637345571206e-05
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_url_config",
+    "duration": 4.975853374999133,
+    "outcome": "passed",
+    "coverage": 0.030715144290118103
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_url_config_with_local_checks_file",
+    "duration": 0.0742395410015888,
+    "outcome": "passed",
+    "coverage": 0.0004582687716147457
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_local_config_with_url_checks_file",
+    "duration": 4.968328791001113,
+    "outcome": "passed",
+    "coverage": 0.03066869624074761
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_local_config_with_url_and_local_checks_files",
+    "duration": 19.563204375001078,
+    "outcome": "passed",
+    "coverage": 0.12076052083333999
+  },
+  {
+    "name": "tests/test_main.py::test_cli_analyze_url_config_with_url_and_local_checks_files",
+    "duration": 0.07556529200155637,
+    "outcome": "passed",
+    "coverage": 0.00046645241976269364
+  },
+  {
+    "name": "tests/test_main.py::test_cli_configure_create_config_when_does_not_exist",
+    "duration": 0.008827499998005806,
+    "outcome": "passed",
+    "coverage": 5.44907407284309e-05
+  },
+  {
+    "name": "tests/test_main.py::test_cli_configure_cannot_create_config_when_does_exist",
+    "duration": 0.008568666999053676,
+    "outcome": "passed",
+    "coverage": 5.2893006166998e-05
+  },
+  {
+    "name": "tests/test_main.py::test_fuzz_cli_analyze_single_directory",
+    "duration": 23.789552666999953,
+    "outcome": "passed",
+    "coverage": 0.14684909053703674
+  },
+  {
+    "name": "tests/test_main.py::test_analyze_store_results_file_does_not_exist",
+    "duration": 23.64415899999949,
+    "outcome": "passed",
+    "coverage": 0.14595159876542896
+  },
+  {
+    "name": "tests/test_main.py::test_analyze_store_results_file_exists_no_force",
+    "duration": 0.057084791998931905,
+    "outcome": "passed",
+    "coverage": 0.0003523752592526661
+  },
+  {
+    "name": "tests/test_main.py::test_analyze_store_results_file_exists_force",
+    "duration": 24.157592499999737,
+    "outcome": "passed",
+    "coverage": 0.14912094135802306
+  },
+  {
+    "name": "tests/test_main.py::test_analyze_store_results_valid_path",
+    "duration": 23.652171707999514,
+    "outcome": "passed",
+    "coverage": 0.14600105992592294
+  },
+  {
+    "name": "tests/test_process.py::test_filter_matches",
+    "duration": 0.24507058300150675,
+    "outcome": "passed",
+    "coverage": 0.008450709758672646
+  },
+  {
+    "name": "tests/test_process.py::test_filter_matches_no_matches",
+    "duration": 0.20775000000139698,
+    "outcome": "passed",
+    "coverage": 0.007163793103496447
+  },
+  {
+    "name": "tests/test_process.py::test_filter_matches_only_int_matches",
+    "duration": 0.2125679169985233,
+    "outcome": "passed",
+    "coverage": 0.007329928172362872
+  },
+  {
+    "name": "tests/test_util.py::test_human_readable_boolean",
+    "duration": 0.0001844159996835515,
+    "outcome": "passed",
+    "coverage": 3.763591830276561e-06
+  },
+  {
+    "name": "tests/test_util.py::test_fuzz_human_readable_boolean",
+    "duration": 0.0027317499989294447,
+    "outcome": "passed",
+    "coverage": 5.574999997815193e-05
+  },
+  {
+    "name": "tests/test_util.py::test_fuzz_human_readable_boolean_correct_string",
+    "duration": 0.0029214999995019753,
+    "outcome": "passed",
+    "coverage": 5.962244896942807e-05
+  },
+  {
+    "name": "tests/test_util.py::test_is_url_correct",
+    "duration": 1.2418599589982477,
+    "outcome": "passed",
+    "coverage": 0.025344080795882608
+  },
+  {
+    "name": "tests/test_util.py::test_total_amount_passed",
+    "duration": 0.19893354200030444,
+    "outcome": "passed",
+    "coverage": 0.004059868204087846
+  },
+  {
+    "name": "tests/test_util.py::test_executable_name",
+    "duration": 0.0007049170017126016,
+    "outcome": "failed",
+    "coverage": 0
+  },
+  {
+    "name": "tests/test_validate.py::test_validate_config_valid_realistic",
+    "duration": 0.0026827919973584358,
+    "outcome": "passed",
+    "coverage": 9.581399990565842e-05
+  },
+  {
+    "name": "tests/test_validate.py::test_validate_config_invalid_realistic",
+    "duration": 0.0026159589979215525,
+    "outcome": "passed",
+    "coverage": 9.342710706862687e-05
+  },
+  {
+    "name": "tests/test_validate.py::test_validate_empty_config",
+    "duration": 0.005935832999966806,
+    "outcome": "passed",
+    "coverage": 0.00021199403571310022
+  },
+  {
+    "name": "tests/test_validate.py::test_integers",
+    "duration": 4.922453833998588,
+    "outcome": "passed",
+    "coverage": 0.17580192264280672
+  }
+]
