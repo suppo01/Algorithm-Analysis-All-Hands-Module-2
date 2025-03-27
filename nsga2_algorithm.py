@@ -47,12 +47,12 @@ def binary_tournament(pop, P, **kwargs):
             loser_list.append(loser)
 
     # return the names of the ideal tests
-    print(f"The Ideal Tests Are: {winner_list}")
+    print(f"\nThe Ideal Tests Are: {winner_list}\n")
     return S
 
 def main():
     """Performs an experiment for a multi objective sorting algorithm."""
-    with open('nsga.json', 'r') as json_data:
+    with open('data/nsga.json', 'r') as json_data:
         data = json.load(json_data)
     data_array = np.array(data["data"])
 
