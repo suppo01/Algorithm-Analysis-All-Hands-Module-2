@@ -2,12 +2,20 @@ from quick_sort import measure_sorting_time
 from tabulate import tabulate  # Import the tabulate library
 
 # Path to your test metrics file
-file_path = '../data/simplified_test_metrics.json'  # Updated path to the correct file
+# file_path = '../data/simplified_test_metrics.json'  # Updated path to the correct file
+file_path = '../data/tryingToCompute.json'  # Updated to new file
 
 # Function to find the fastest test case
 def find_fastest_test_case(sorted_tests):
-    # Return the test case with the smallest duration (the "best" outcome)
-    return min(sorted_tests, key=lambda test: test['duration'])
+    # Start with the first test case as the fastest
+    fastest_test = sorted_tests[0]
+
+    # Loop through all test cases to find the one with the smallest duration
+    for test in sorted_tests:
+        if test['duration'] < fastest_test['duration']:
+            fastest_test = test  # Update the fastest test case
+
+    return fastest_test  # Return the test case with the smallest duration
 
 # Measure running time and sort by duration
 sorted_tests_by_duration = measure_sorting_time(file_path, 'duration')
@@ -26,10 +34,11 @@ print(f"Coverage: {fastest_test_case['coverage']}")
 
 # Prepare data for tabular display (for sorted by coverage)
 # table_data = [[test['name'], test['duration'], test['coverage']] for test in sorted_tests_by_duration]
-table_data = [[test['name'], test['duration'], test['coverage']] for test in sorted_tests_by_coverage]
+table_data = [[test['name'], test['duration'], test['coverage']] for test in sorted_tests_by_coverage[:10]]
 headers = ["Test Name", "Duration", "Coverage"]
 
 # Print the table of sorted test cases
 # print("\nSorted Test Cases by Duration:")
 print("\nSorted Test Cases by Coverage:")
 print(tabulate(table_data, headers=headers, tablefmt="grid"))
+
