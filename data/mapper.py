@@ -45,7 +45,7 @@ def map_coverage_percent_to_tests(coverage_file, test_metrics_file, output_file)
         if module_name in module_coverage:
             # Avoid division by zero by checking duration
             if test["duration"] > 0:
-                test["coverage"] = module_coverage[module_name]["covered_lines"] / test["duration"]
+                test["coverage"] = test["duration"] / module_coverage[module_name]["covered_lines"] 
             else:
                 test["coverage"] = 0
         else:
@@ -114,5 +114,5 @@ def create_nsga_format(coverage_file, test_metrics_file, output_file):
     return nsga_data
 
 if __name__ == "__main__":
-    map_coverage_percent_to_tests("coverage.json", "test_metrics.json", "tryingToCompute.json")
+    map_coverage_percent_to_tests("coverage.json", "test_metrics.json", "newtryingToCompute.json")
     create_nsga_format("coverage.json", "test_metrics.json", "nsga.json")
