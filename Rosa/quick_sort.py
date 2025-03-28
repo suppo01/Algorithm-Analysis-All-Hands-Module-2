@@ -1,7 +1,10 @@
+"""provides functions to sort test metrics using the QuickSort algorithm."""
+
 import json # Import the JSON module to handle JSON file operations
 import time # Import the time module to measure execution time
 import random  # Import random for selecting a random pivot in QuickSort
 from typing import List, Dict, Any
+
 
 def quicksort(arr: List[Any]) -> List[Any]:
     """Sorts an array using the QuickSort algorithm with a random pivot."""
@@ -13,8 +16,6 @@ def quicksort(arr: List[Any]) -> List[Any]:
         right = [x for x in arr if x > pivot]  # Elements greater than the pivot
         # Recursively sort the left and right partitions and combine them with the pivot
         return quicksort(left) + [pivot] + quicksort(right)
-
-
 
 
 def quicksort_tests(tests: List[Dict[str, Any]], key: str) -> List[Dict[str, Any]]:
@@ -38,8 +39,8 @@ def quicksort_tests(tests: List[Dict[str, Any]], key: str) -> List[Dict[str, Any
         return quicksort_tests(left, key) + [pivot] + quicksort_tests(right, key)
 
 
-
 def load_and_sort_metrics(file_path: str, sort_key: str) -> List[Dict[str, Any]]:
+    """Loads test metrics from a JSON file and sorts them by the specified key."""
     try:
         with open(file_path, 'r') as f: # Open the JSON file in read mode
             test_metrics = json.load(f) # Load the JSON data into a Python list
@@ -65,8 +66,7 @@ def load_and_sort_metrics(file_path: str, sort_key: str) -> List[Dict[str, Any]]
 
 # This is called in main.py to benchmark
 def measure_sorting_time(file_path: str, sort_key: str) -> List[Dict[str, Any]]:
-    """
-    Measures the time it takes to load and sort the metrics from a JSON file."""
+    """Measures the time it takes to load and sort the metrics from a JSON file."""
     start_time = time.time()  # Record the start time
     sorted_tests = load_and_sort_metrics(file_path, sort_key) # Load and sort the metrics
     end_time = time.time() # Record the end time
