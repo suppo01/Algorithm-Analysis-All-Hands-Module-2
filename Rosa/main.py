@@ -1,44 +1,39 @@
+"""This script identifies the test case with the highest coverage from a JSON file."""
+
 from quick_sort import measure_sorting_time
-from tabulate import tabulate  # Import the tabulate library
+from typing import List, Dict, Any
+
 
 # Path to your test metrics file
-# file_path = '../data/simplified_test_metrics.json'  # Updated path to the correct file
-file_path = '../data/tryingToCompute.json'  # Updated to new file
+file_path = '../data/newtryingToCompute.json'  # Updated again to new file
 
-# Function to find the fastest test case
-def find_fastest_test_case(sorted_tests):
-    # Start with the first test case as the fastest
-    fastest_test = sorted_tests[0]
+# Function to find the test case with the highest coverage
+def find_highest_coverage_test_case(sorted_tests: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """Finds the test case with the highest coverage."""
+    # Start with the first test case as the one with the highest coverage
+    highest_coverage_test: Dict[str, Any] = sorted_tests[0]
 
-    # Loop through all test cases to find the one with the smallest duration
+    # Loop through all test cases to find the one with the largest coverage
     for test in sorted_tests:
-        if test['duration'] < fastest_test['duration']:
-            fastest_test = test  # Update the fastest test case
+        if test['coverage'] > highest_coverage_test['coverage']:
+            highest_coverage_test = test  # Update the test case with the highest coverage
 
-    return fastest_test  # Return the test case with the smallest duration
+    return highest_coverage_test  # Return the test case with the largest coverage
 
-# Measure running time and sort by duration
-sorted_tests_by_duration = measure_sorting_time(file_path, 'duration')
-# Sort by coverage (if you want this, otherwise leave out)
-sorted_tests_by_coverage = measure_sorting_time(file_path, 'coverage')
+# Add a blank line
+print("\n🌟 Results 🌟")
 
-# Find the fastest test case (best outcome)
-fastest_test_case = find_fastest_test_case(sorted_tests_by_duration)
+# line for spacing
+print()
 
-# Print the fastest test case
-print("Fastest Test Case (Base on duration):")
-print(f"Test Name: {fastest_test_case['name']}")
-print(f"Duration: {fastest_test_case['duration']}")
-print(f"Coverage: {fastest_test_case['coverage']}")
+# Measure running time and sort by coverage
+sorted_tests_by_coverage: List[Dict[str, Any]] = measure_sorting_time(file_path, 'coverage')
 
+# Find the test case with the highest coverage
+highest_coverage_test_case: Dict[str, Any] = find_highest_coverage_test_case(sorted_tests_by_coverage)
 
-# Prepare data for tabular display (for sorted by coverage)
-# table_data = [[test['name'], test['duration'], test['coverage']] for test in sorted_tests_by_duration]
-table_data = [[test['name'], test['duration'], test['coverage']] for test in sorted_tests_by_coverage[:10]]
-headers = ["Test Name", "Duration", "Coverage"]
-
-# Print the table of sorted test cases
-# print("\nSorted Test Cases by Duration:")
-print("\nSorted Test Cases by Coverage:")
-print(tabulate(table_data, headers=headers, tablefmt="grid"))
+# Print the test case with the highest coverage
+print("\n🚀 Test Case with Highest Coverage:")
+print(f"Test Name: {highest_coverage_test_case['name']}")
+print(f"Coverage: {highest_coverage_test_case['coverage']}")
 
